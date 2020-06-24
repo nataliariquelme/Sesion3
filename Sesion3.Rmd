@@ -142,7 +142,10 @@ R Studio y el paquete usethis serán nuestros aliados (para evitar al temido she
 ---
 ## 2.1 Conectemonos con GitHub (use_github)
 
-![tok](https://raw.githubusercontent.com/nataliariquelme/Happygitmaterial/master/18.2.1.gif)
+```{r}
+usethis::use_github(protocol = 'https', auth_token = Sys.getenv("GITHUB_PAT"))
+```
+
 
 ---
 ## Últimos cambios antes de enviar a GitHub remote (commit)
